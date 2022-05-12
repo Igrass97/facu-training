@@ -13,7 +13,7 @@
 9. [Front End Frameworks](#front-end-frameworks)
 10. [Final Project](#final-project)
 
-## Web 101
+## WEB 101
 
 Each computer connected to the internet has an unique IP address. (xxx.xxx.xxx.xxxx).
 To communicate between each other, the computers uses the TCP/IP protocol. The messages must be translated from alphabetic text into electronic signals, transmitted over the internet.
