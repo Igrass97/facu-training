@@ -213,15 +213,16 @@ Note that src and alt are attributes too.
         </tbody>
     </table>
 
-### Excercice: Create your fake company!
+### Excercise: Create your fake company!
 Create a HTML page that includes:
 1. A title.
 2. An image representing your company.
 3. A paragraph about your company and what you do.
-4. A link that redirects you to another page which contains a table of the employees of your company. Hint: with the href attribute of the <a> element, you can also reference another html page.
+4. A link that redirects you to another page which contains a table of the employees of your company.
+
+Hint: with the href attribute of the <a> element, you can also reference another html page.
 
 The columns for the table should be: Employee Name, Role, Seniority (Junior, Semi-senior, Senior) and salary. Include at least 3 employees.
-
 ## CSS
 
 ## Boolean Algebra
