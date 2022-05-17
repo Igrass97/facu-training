@@ -289,6 +289,7 @@ Create a HTML document with the following:
 1. A `lang` attribute on the `<html>` root element with the value `'en-US'`
 2. Create a list `<ul>` with the attributes that you've learned.
 3. For each list item, add a `title` attribute with the same value that's inside the item. This will create a tooltip when you hover over the item.
+4. Add some style to your page using text formatting tags.
 
 ### Semantic HTML
 
