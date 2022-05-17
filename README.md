@@ -109,19 +109,22 @@ To see a list of the commits made to the repository
     git log
 
 Jump to a specific version of your code
-git checkout <commit-hash> # you can grab the commit hash from the git log command output.
+
+    git checkout <commit-hash> # you can grab the commit hash from the git log command output.
 
 ### Branches
 
 A branch it's like a timeline of your repository. You can have multiple branches with different versions of your project code and they can be tracked in paralllel. This allows us to make changes in your code, without affecting our main timeline or production code. (the master or main branch). If we decide that our code in the branch is production ready, we can MERGE that branch into the main branch (or any other branch).
 
 To create a new branch:
-git branch <new-branch-name>
+
+    git branch <new-branch-name>
 
 Note that the branch that you create, will have all the commits added to the current branch you're in.
 
 To switch to another branch:
-git checkout <branch-name>
+
+    git checkout <branch-name>
 
 Great! now you have your main branch, and your specific feature branch that you want to integrate to the main timeline of the code (production).
 To do so, we use merge.
@@ -137,20 +140,24 @@ Right now, we're only working on our local machine. But what if we want to share
 For this course, we'll use GitHub.
 
 To sync your local repository to a remote:
-git remote add origin <repository>
-git branch -M main
-git push -u origin main
+
+    git remote add origin <repository>
+    git branch -M main
+    git push -u origin main
 
 By default, Git uses master as the main branch name, but that can be confused with slavery (master/slave) and the new term main was adopted by the community. That's why in the second command we're renaming the master branch.
 
 To fetch all the new branches that are on the remote:
-git fetch
+
+    git fetch
 
 To push your changes to a remote branch
-git push
+
+    git push
 
 To update your branch with the remote code
-git pull
+
+    git pull
 
 A real world scenario: when I recieve a task to implement a new feature I do the following:
 
@@ -163,10 +170,11 @@ A real world scenario: when I recieve a task to implement a new feature I do the
 7. Merge my new changes into the master branch.
 
 This, on git commands would look like this:
-git branch my-new-awesome-feature
-git add .
-git commit -m "Adds my new awesome feature"
-git push origin my-new-awesome-feature
+
+    git branch my-new-awesome-feature
+    git add .
+    git commit -m "Adds my new awesome feature"
+    git push origin my-new-awesome-feature
 
 Once it's pushed, you can use Github to open a merge request and review the changes that will be added to the main branch.
 
@@ -176,7 +184,7 @@ Once it's pushed, you can use Github to open a merge request and review the chan
 
 It's the most basic building block of the Web. It defines the meaning and the structure of a web content.
 HTML uses markup (tags) to annotate text, images, and other content for display in a Web browser.
-An HTML element is represented with <tag-name>.
+An HTML element is represented with `<tag-name>`.
 
 Basic structure of an HTML Document
 
@@ -191,11 +199,11 @@ Basic structure of an HTML Document
         </body>
     </html>
 
-1. <!DOCTYPE html> instructs the browser that you're using the last version of HTML.
-2. <html> the html element wraps all the content of the entire page (root element).
-3. <head> acts as a container for all the metadata of the page (stuff that won't appear on the page content but it will affect how it works).
-4. <title> the title of the page that will be displayed on the browser.
-5. <body> this contains the content that will be visible and rendered by the browser.
+1. `<!DOCTYPE html>` instructs the browser that you're using the last version of HTML.
+2. `<html>` the html element wraps all the content of the entire page (root element).
+3. `<head>` acts as a container for all the metadata of the page (stuff that won't appear on the page content but it will affect how it works).
+4. `<title>` the title of the page that will be displayed on the browser.
+5. `<body>` this contains the content that will be visible and rendered by the browser.
 
 ### Typography
 
@@ -249,7 +257,7 @@ Create a HTML page that includes:
 3. A paragraph about your company and what you do.
 4. A link that redirects you to another page which contains a table of the employees of your company.
 
-Hint: with the href attribute of the <a> element, you can also reference another html page.
+Hint: with the href attribute of the `<a>` element, you can also reference another html page.
 
 The columns for the table should be: Employee Name, Role, Seniority (Junior, Semi-senior, Senior) and salary. Include at least 3 employees.
 
@@ -258,10 +266,15 @@ The columns for the table should be: Employee Name, Role, Seniority (Junior, Sem
 Read the following guides:
 
 [ATTRIBUTES](https://www.w3schools.com/html/html_attributes.asp)
+
 [TEXT FORMATTING](https://www.w3schools.com/html/html_formatting.asp)
+
 [COMMENTS](https://www.w3schools.com/html/html_comments.asp)
+
 [HTML BLOCK & INLINE](https://www.w3schools.com/html/html_blocks.asp)
+
 [IFRAMES](https://www.w3schools.com/html/html_iframe.asp)
+
 [ENTITIES](https://www.w3schools.com/html/html_entities.asp)
 
 Notes:
@@ -273,9 +286,9 @@ Notes:
 
 Create a HTML document with the following:
 
-1. A lang attribute on the <html> root element with the value 'en-US'
-2. Create a list (ul) with the attributes that you've learned.
-3. For each list item, add a title attribute with the same value that's inside the item. This will create a tooltip when you hover over the item.
+1. A `lang` attribute on the `<html>` root element with the value `'en-US'`
+2. Create a list `<ul>` with the attributes that you've learned.
+3. For each list item, add a `title` attribute with the same value that's inside the item. This will create a tooltip when you hover over the item.
 
 ### Semantic HTML
 
@@ -283,12 +296,12 @@ Read [HTML5 SEMANTICS](https://www.w3schools.com/html/html5_semantic_elements.as
 
 ### Exercise: Give your HTML document better semantics
 
-1. Add a <header> element for your document.
-2. Inside the <header>, put a <nav> element with an <ul> and <li><a>Link<a/></li> for each different page of your website. (right now you have About and Staff, try adding a third one called "Contact", we'll fill this one later).
-3. Add the title of your site at the top of your pages with a <h1> tag, then change your existing <h1>'s to <h2>'s.
-4. Wrap the different sections of your site with <section id="section-name"> elements. (wrap your <h2> and your <p> inside a <section id="section-name"> for each section of your website)
-5. In the main page, add a new section below "About Us", named "Our Mission" and fill it with the content you want.
-6. Add a <footer> to your website with your copyright and the address of your company. Remember to use the <address> element.
+1. Add a `<header>` element for your document.
+2. Inside the `<header>`, put a `<nav>` element with an `<ul>` and `<li><a>Link<a/></li>` for each different page of your website. (right now you have About and Staff, try adding a third one called `"Contact"`, we'll fill this one later).
+3. Add the title of your site at the top of your pages with a `<h1>` tag, then change your existing `<h1>`'s to `<h2>`'s.
+4. Wrap the different sections of your site with `<section id="section-name">` elements. (wrap your `<h2>` and your `<p>` inside a `<section id="section-name">` for each section of your website)
+5. In the main page, add a new section below `"About Us"`, named `"Our Mission"` and fill it with the content you want.
+6. Add a `<footer>` to your website with your copyright and the address of your company. Remember to use the `<address>` element.
 
 ### HTML Forms
 
@@ -302,7 +315,7 @@ Remember the Contact page that we left blank? Fill it with a contact form.
 1. name
 2. email
 3. phone
-4. <select> with different reasons: (techical assistance, sales, other)
+4. `<select>` with different reasons: (techical assistance, sales, other)
 5. two radio buttons with the following labels: (client, not client)
 6. text area for the comment
 7. submit button
