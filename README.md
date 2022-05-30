@@ -323,6 +323,94 @@ Remember the Contact page that we left blank? Fill it with a contact form.
 
 ## CSS
 
+### CSS Knowledge
+
+## Knowledge !
+
+[Syntax](https://www.w3schools.com/css/css_syntax.asp)
+
+[CSS Selectors](https://www.w3schools.com/css/css_selectors.asp)
+
+[Specifity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+
+[The Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
+
+[CSS Sizing](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS)
+
+[CSS Display](https://www.w3schools.com/css/css_display_visibility.asp)
+
+[CSS Positioning](https://www.w3schools.com/css/css_positioning.asp)
+
+[CSS Positioning 2](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning)
+
+[Pseudo Classes](https://www.w3schools.com/css/css_pseudo_classes.asp)
+
+[Pseudo Elements](https://www.w3schools.com/css/css_pseudo_elements.asp)
+
+[Z-Index](https://www.w3schools.com/css/css_z-index.asp)
+
+[Inline-Block](https://www.w3schools.com/css/css_inline-block.asp)
+
+[CSS Units](https://www.w3schools.com/css/css_units.asp) (most used: px, em, rem, %, vh, vw)
+
+[CSS Layout Introduction](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction)
+
+[Normal Flow](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow)
+
+[Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+
+[Flexbox 2](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+[Grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids)
+
+[CSS Media Queries](https://www.youtube.com/watch?v=yU7jJ3NbPdA)
+
+[Responsive Design](https://www.youtube.com/watch?v=2zypRlzIcHc)
+
+[CSS Colors](https://www.w3schools.com/css/css_colors.asp)
+
+[CSS Backgrounds](https://www.w3schools.com/css/css_background.asp)
+
+[CSS Text](https://www.w3schools.com/css/css_text.asp) (read all the subtopics; alignment, decoration, transformation, spacing and shadow)
+
+[CSS Max Width](https://www.w3schools.com/css/css_max-width.asp)
+
+## Exercise
+
+Add a stylesheet to your project and use it on all your pages. [How To](https://www.w3schools.com/css/css_howto.asp) (please use external CSS).
+
+Style your Header component. Create a selector (can be an ID or class) to target the header of your website.
+
+Tips:
+
+1. Make the header fixed height (like 62px or something like that).
+2. Give it a background color that you like.
+3. Style the list inside the header, use flex to display the items horizontally. We don't want the underline on the links and also we don't want the dots on the lists. Read `text-decoration: none;` and `list-style-type: none;`.
+4. Add a hovering effect to the items, maybe changing the background a little bit.
+
+Center your page content below the header.
+
+Tips:
+
+1. Add a class to your sections `.section` and make it `width: 80%` and `margin: 0 auto`, this will center the content.
+
+Style your Staff Table
+
+Style your Contact Form
+
+Tips:
+
+1.  Create a class `.form-control` that wraps the label and the input for each input.
+
+        <div class="form-control">
+            <label></label>
+            <input></input>
+        </div>
+
+Use this class to give the form elements separation with each other and also to set a fixed width for each one. 2. Don't forget to style your button.
+
+Style your footer
+
 ## Boolean Algebra
 
 ## Programming 101
