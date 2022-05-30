@@ -1,55 +1,83 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Hipercompumundo Megasoft contact</title>
-    </head>
-        <body>
-            <header> 
-                <h1>Hipercompumundo Megasoft</h1>
-               <section id="navigation">
-                <nav>
-                    <ul class="nav-list">
-                        <li class="nav-element"><a href="staff.html">Staff</a> </li>
-                        <li class="nav-element"><a href="contact.html">Contact</a></li>
-                        <li class="nav-element"><a href=ejercicio-3.html>About</a></li>
-                    </ul>   
-                </nav>
-               </section>
-            </header>
-            <section class="page-section" id="form">
-                <h2>Contact Us</h2>
-                <form>
-                 <div class="form-control"
-                    <label for="name"><strong>Name</strong></label> <br>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="e-mail"><strong>E-Mail</strong></label><br>
-                    <input type="text" id="e-mail" name="e-mail"><br>
-                    <label for="phone"><strong>Phone Number</strong></label><br>
-                    <input type="text" id="phone" name="phone"><br>
-                    <label for="reasons"><strong>Why did you contact us?</strong></label><br>
-                    <select id="reasons" name="reasons">
-                    <option value="technical assistance">Technical Assistance</option>
-                    <option value="sales">Sales</option>
-                    <option value="other">Other</option>
-                </select><br>
-                    <p><strong>Are you a client?</strong></p>
-                    <input type="radio" id="clientyes" name="clientornah" value="Client">
-                    <label for="clientyes">Client</label><br>
-                    <input type="radio" id="clientno" name="clientornah" value="HTML">
-                    <label for="clientno">Not client</label><br>
-                    <p><strong>Leave a comment below</strong></p>
-                    <textarea name="comments" rows="20" cols="50"></textarea><br>
-                    <input id="button" type="submit" value="Submit"> 
-                 </div>
-                </form>
-            </section><br>
-            <footer>
-                Web made by Facundo Grassini.<br>
-                <address>
-                Brown 1032, Villa Constitución, Santa Fe. <br>
-                Argentina
-                </address>
-            </footer>
-        </body>
- </html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Hipercompumundo Megasoft contact</title>
+  </head>
+  <body>
+    <div class="root">
+      <header>
+        <h1>Hipercompumundo Megasoft</h1>
+        <section id="navigation">
+          <nav>
+            <ul class="nav-list">
+              <a href="index.html"><li class="nav-element">Home</li></a>
+              <a href="staff.html"><li class="nav-element">Staff</li></a>
+              <a href="contact.html"
+                ><li class="nav-element active">Contact</li></a
+              >
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <section class="page-section paper">
+        <h2 class="text-center">Contact Us</h2>
+        <form id="form">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+          </div>
+
+          <div class="form-control">
+            <label for="e-mail">E-Mail</label>
+            <input type="text" id="e-mail" name="e-mail" />
+          </div>
+
+          <div class="form-control">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" />
+          </div>
+
+          <div class="form-control">
+            <label for="reasons">Why did you contact us?</label>
+            <select id="reasons" name="reasons">
+              <option value="technical assistance">Technical Assistance</option>
+              <option value="sales">Sales</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <label>Are you a client?</label>
+          <div class="form-radio-control">
+            <input
+              type="radio"
+              id="clientyes"
+              name="clientornah"
+              value="Client"
+            />
+            <label for="clientyes">Client</label>
+          </div>
+          <div class="form-radio-control">
+            <input type="radio" id="clientno" name="clientornah" value="HTML" />
+            <label for="clientno">Not client</label>
+          </div>
+
+          <div class="form-control">
+            <label>Leave a comment below</label>
+            <textarea name="comments" rows="20" cols="50"></textarea>
+          </div>
+
+          <input class="button-primary" type="submit" value="Submit" />
+        </form>
+      </section>
+      <br />
+      <footer>
+        Web made by Facundo Grassini.<br />
+        <address>
+          Brown 1032, Villa Constitución, Santa Fe. <br />
+          Argentina
+        </address>
+      </footer>
+    </div>
+  </body>
+</html>
