@@ -411,6 +411,8 @@ Use this class to give the form elements separation with each other and also to 
 
 Style your footer
 
+Follow this mock up to get an idea: [Figma](https://www.figma.com/file/zKqQwgRfofH37YijbaTZDI/Untitled?node-id=0%3A1)
+
 ## Boolean Algebra
 
 ## Programming 101
