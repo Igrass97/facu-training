@@ -14,6 +14,7 @@ header {
   background-color: rgba(0, 0, 0, 0.745);
   width: 100%;
   z-index: 999;
+  height: 70px;
 }
 nav .nav-list {
   display: flex;
@@ -40,8 +41,19 @@ nav .nav-list {
 }
 
 .video {
-  padding-top: 72px;
-  padding-bottom: 500px;
+  height: 100%;
+  width: 100%;
+}
+
+.video-overlay {
+  height: 100%;
+  width: 100%;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #trailer {
@@ -49,24 +61,22 @@ nav .nav-list {
 }
 
 .featured-banner {
+  height: 800px;
   background-image: linear-gradient(
     180deg,
     rgba(24, 24, 24, 0.05),
     rgb(49, 49, 48)
   );
   position: relative;
+  top: 70px;
+  overflow: hidden;
 }
 
 img {
-  position: absolute;
-  top: 100px;
-  left: 30px;
   height: 150px;
 }
+
 #play {
-  position: absolute;
-  top: 900px;
-  left: 40px;
   color: white;
   background-color: rgba(0, 0, 0, 0.393);
   padding-right: 15px;
@@ -77,15 +87,13 @@ img {
   border-radius: 10px;
   border: none;
 }
+
 #play:hover {
   background-color: #383737;
   color: white;
 }
 
 #info {
-  position: absolute;
-  top: 950px;
-  left: 40px;
   color: white;
   background-color: rgba(0, 0, 0, 0.393);
   padding-right: 15px;
@@ -96,6 +104,7 @@ img {
   border-radius: 10px;
   border: none;
 }
+
 #info:hover {
   background-color: #383737;
   color: white;
@@ -115,8 +124,5 @@ img {
   font-size: 2rem;
   color: white;
   display: flex;
-  position: absolute;
-  left: 40px;
-  top: 1200px;
   justify-content: space-evenly;
 }
