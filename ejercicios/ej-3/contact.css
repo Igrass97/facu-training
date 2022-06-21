@@ -1,0 +1,37 @@
+#form {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.form-control,
+.form-radio-control {
+  margin: 1rem 0;
+}
+
+.form-control label,
+.form-control input,
+.form-control textarea,
+.form-control select {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.form-control label {
+  margin-bottom: 0.3rem;
+}
+
+.form-control input,
+.form-control select {
+  height: 30px;
+}
+
+.button-primary {
+  border: none;
+  padding: 0.5rem 2rem;
+  background-color: #531866;
+  font-size: 20px;
+  color: white;
+}
