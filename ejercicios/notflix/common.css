@@ -49,46 +49,16 @@ nav .nav-list {
   left: 0;
 }
 
-img {
-  height: 150px;
-}
-
-#play {
+.btn {
   color: white;
   background-color: rgba(0, 0, 0, 0.393);
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 0.4rem 1rem;
   font-size: 1.5rem;
   border-radius: 10px;
   border: none;
-  position: absolute;
-  top: 800px;
-  right: 350px;
 }
 
-#play:hover {
-  background-color: #383737;
-  color: white;
-}
-
-#info {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.393);
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  border: none;
-  top: 800px;
-  right: 50px;
-  position: absolute;
-}
-
-#info:hover {
+.btn:hover {
   background-color: #383737;
   color: white;
 }
@@ -105,8 +75,9 @@ img {
 
 .other-shows {
   display: flex;
-  justify-content: space-evenly;
-  overflow: hidden;
+  overflow: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .featured-banner,
@@ -128,18 +99,67 @@ video {
 }
 
 #content {
-  padding: 0 5rem;
+  padding: 5rem;
   position: relative;
   top: -120px;
   min-height: 1000px;
-  background: rgb(49, 49, 49);
+  background: rgb(14, 14, 14);
   background: linear-gradient(
     180deg,
-    rgba(49, 49, 49, 0) 0%,
-    rgba(49, 49, 49, 1) 18%
+    rgba(14, 14, 14, 0) 0%,
+    rgba(14, 14, 14, 1) 18%
   );
 }
 
 #root {
   background: rgb(49, 49, 49);
+}
+
+.pic {
+  padding-left: 10px;
+  height: 122px;
+  width: 217px;
+}
+
+.video-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding-left: 5rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.logo > img {
+  padding-bottom: 1.5rem;
+  height: 200px;
+  width: 270px;
+}
+
+* {
+  scrollbar-width: 3px;
+  scrollbar-color: rgb(32, 32, 32);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(32, 32, 32);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #b31313;
 }
