@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="common.css" />
+
+    <title>Hipercompumundo Megasoft contact</title>
+  </head>
+  <body>
+    <div class="root">
+      <header>
+        <h1>Hipercompumundo Megasoft</h1>
+        <section id="navigation">
+          <nav>
+            <ul class="nav-list">
+              <a href="index.html"><li class="nav-element">Home</li></a>
+              <a href="staff.html"><li class="nav-element">Staff</li></a>
+              <a href="contact.html"
+                ><li class="nav-element active">Contact</li></a
+              >
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <section class="page-section paper">
+        <h2 class="text-center">Contact Us</h2>
+        <form id="form">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+          </div>
+
+          <div class="form-control">
+            <label for="e-mail">E-Mail</label>
+            <input type="text" id="e-mail" name="e-mail" />
+          </div>
+
+          <div class="form-control">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" />
+          </div>
+
+          <div class="form-control">
+            <label for="reasons">Why did you contact us?</label>
+            <select id="reasons" name="reasons">
+              <option value="technical assistance">Technical Assistance</option>
+              <option value="sales">Sales</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <label>Are you a client?</label>
+          <div class="form-radio-control">
+            <input
+              type="radio"
+              id="clientyes"
+              name="clientornah"
+              value="Client"
+            />
+            <label for="clientyes">Client</label>
+          </div>
+          <div class="form-radio-control">
+            <input type="radio" id="clientno" name="clientornah" value="HTML" />
+            <label for="clientno">Not client</label>
+          </div>
+
+          <div class="form-control">
+            <label>Leave a comment below</label>
+            <textarea name="comments" rows="20" cols="50"></textarea>
+          </div>
+
+          <input class="button-primary" type="submit" value="Submit" />
+        </form>
+      </section>
+      <footer>
+        Web made by Facundo Grassini. &copy;
+        <address>Brown 1032, Villa Constitución, Santa Fe. Argentina</address>
+      </footer>
+    </div>
+  </body>
+</html>

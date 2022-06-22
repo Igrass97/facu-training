@@ -1,0 +1,20 @@
+#staff-table {
+  font-family: monospace;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+
+  border-collapse: collapse;
+}
+
+#staff-table th {
+  background-color: #531866;
+  color: white;
+}
+
+#staff-table td,
+#staff-table th {
+  border: 1px solid black;
+
+  padding: 0.7rem;
+  text-align: left;
+}
