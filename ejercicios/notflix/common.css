@@ -61,7 +61,7 @@ nav .nav-list {
 }
 
 .featured-banner {
-  height: 800px;
+  height: 900px;
   background-image: linear-gradient(
     180deg,
     rgba(24, 24, 24, 0.05),
@@ -69,7 +69,6 @@ nav .nav-list {
   );
   position: relative;
   top: 70px;
-  overflow: hidden;
 }
 
 img {
@@ -86,6 +85,9 @@ img {
   font-size: 1.5rem;
   border-radius: 10px;
   border: none;
+  position: absolute;
+  top: 800px;
+  right: 350px;
 }
 
 #play:hover {
@@ -103,6 +105,9 @@ img {
   font-size: 1.5rem;
   border-radius: 10px;
   border: none;
+  top: 800px;
+  right: 50px;
+  position: absolute;
 }
 
 #info:hover {
@@ -121,8 +126,29 @@ img {
 }
 
 .other-shows {
-  font-size: 2rem;
-  color: white;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  overflow: scroll;
+  top: 860px;
+}
+
+.pics {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#other-text {
+  position: absolute;
+  display: flex;
+  top: 980px;
+  left: 10px;
+  font-size: 1.5rem;
+  color: black;
+}
+.logo {
+  padding-top: 30px;
+  padding-left: 30px;
 }
